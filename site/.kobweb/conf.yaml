@@ -1,0 +1,14 @@
+site:
+  title: "Caffeine"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/kobweb_first.js"
+      api: "build/libs/kobweb_first.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/kobweb_first.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
